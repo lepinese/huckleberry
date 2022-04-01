@@ -1,12 +1,47 @@
+:root {
+  --s8: 8px;
+  --s16: 16px;
+  --s24: 24px;
+  --s32: 32px;
+  --s48: 48px;
+  --s64: 64px;
+  --s96: 96px;
+  --s128: 128px;
+
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary-lighter: hsl(45deg, 100%, 50%);
+  --secondary-darker: hsl(45deg, 100%, 40%);
+  --grays-black: hsl(0deg, 0%, 0%);
+  --grays-very-dark: hsl(0deg, 0%, 10%);
+  --grays-dark: hsl(0deg, 0%, 30%);
+  --grays-medium: hsl(0deg, 0%, 40%);
+  --grays-light: hsl(0deg, 0%, 60%);
+  --grays-white: hsl(0deg, 0%, 100%);
+
+  --size-1rem: 1rem;
+  --size-1-25rem: 1.25rem;
+  --size-1-5rem: 1.5rem;
+  --size-2rem: 2rem;
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Add styles here! */
+
+header {
+  padding-top: var(--s64);
+}
+
+body {
+  padding: 0 var(--s16);
+}
