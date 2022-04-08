@@ -27,21 +27,64 @@
 * {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Add styles here! */
 
 header {
   padding-top: var(--s64);
+  padding-bottom: var(--s32);
 }
 
-body {
-  padding: 0 var(--s16);
+p {
+  margin: var(--s16) 0;
+}
+
+main {
+  background-color: var(--grays-light);
+  border-top: var(--s8) solid var(--grays-medium);
+  padding: var(--s64) 0;
+}
+
+.max-width-wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.card,
+.intro-chunk {
+  background-color: var(--grays-white);
+  padding: var(--s16);
+}
+
+.intro-chunk {
+  max-width: 360px;
+}
+
+.intro-chunk strong {
+  color: var(--primary);
+}
+
+.indented-heading {
+  background-color: var(--secondary-lighter);
+  border-bottom: var(--s8) solid var(--secondary-darker);
+  padding: var(--s8) var(--s24);
+  margin-left: -24px;
 }
